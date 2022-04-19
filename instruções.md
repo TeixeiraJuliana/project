@@ -1,4 +1,8 @@
 
+
+
+Route::get('', [App\Http\Controllers\ClientController::class, 'index'])->name('');
+
 # usar o vue 
 
 composer require laravel/ui
@@ -58,6 +62,7 @@ bower install
 gulp
 npm run watch
 php artisan serve 
+http://127.0.0.1:8000/
 
  <p>Artigos Cadastrados: {{$posts->comments->count()}}</p>
 
@@ -83,7 +88,17 @@ php artisan make:migration add_user_id_to_posts_table
 
 INSERT INTO posts (title, content, user_id ) VALUES ('', '', 1);
 
+INSERT INTO clients (name_client, email, phone, cpf ) VALUES ('João Azevedo', 'joaoazevedo@gmail.com', '6233221100', '11111111111');
 
+INSERT INTO clients (name_client, email, phone, cpf ) VALUES ('Maria do Carmo', 'mariadocarmo.com', '623333445566', '22222222222');
+
+INSERT INTO clients (name_client, email, phone, cpf ) VALUES ('Marcos Silva', 'marcossilva.com', '6233556677', '33333333333');
+
+INSERT INTO clients (name_client, email, phone, cpf ) VALUES ('Pedro Mackenzie', 'pedromackenzie', '6233667788', '44444444444');
+
+INSERT INTO clients (name_client, email, phone, cpf ) VALUES ('Felipe Jonson', 'felipejonson@gmail.com', '6233778899', '55555555555');
+
+INSERT INTO clients (name_client, email, phone, cpf ) VALUES ('Amanda Pereira', 'amandapereira@gmail.com', '6233889911', '66666666666');
 
 # codigos 
 

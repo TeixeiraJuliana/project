@@ -1,5 +1,6 @@
 <?php
 use Illuminate\Http\Controllers\Client;
+use Illuminate\Http\Controllers\User;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -17,7 +18,7 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
+    return Inertia::render('Home', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
@@ -42,6 +43,10 @@ Route::middleware([
 ])->get('/clients', function () {
         return Inertia::render('listClients');
 })->name('clients.index');
+
+Route::get('/users', [App\Http\Controllers\UserController::class, 'index'])->name('users.index');
+
+Route::get('/clients', [App\Http\Controllers\ClientController::class, 'index'])->name('clients.index');
 
 Route::middleware([
     'auth:sanctum',

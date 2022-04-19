@@ -34,7 +34,7 @@ const logout = () => {
 
         <JetBanner />
 
-        <div class="min-h-screen bg-gray-100">
+        <div class="min-h-screen bg-gray-100" style="background=red">
             <nav  class="bg-white border-b border-gray-100">
                 <!-- Primary Navigation Menu -->
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,6 +54,9 @@ const logout = () => {
                                 </JetNavLink>
                                 <JetNavLink :href="route('clients.index')" :active="route().current('clients')">
                                     Clientes
+                                </JetNavLink>
+                                <JetNavLink :href="route('users.index')" :active="route().current('users')">
+                                    Usuários
                                 </JetNavLink>
                             </div>
                         </div>
@@ -311,3 +314,10 @@ const logout = () => {
         </div>
     </div>
 </template>
+<style>
+    main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>

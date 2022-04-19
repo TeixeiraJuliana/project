@@ -305,7 +305,7 @@ export default {
 
 </style>
 
-
+src="{{ asset('./assets/image/see.svg')
 
 dash
 
@@ -326,3 +326,7 @@ dash
 
 import Welcome from '@/Jetstream/Welcome.vue';
 import Navbar from '../Pages/Navbar.vue'
+
+Route::get('/clients', 'ClientController@index')->name('clients.index');
+
+Route::get('/clients', [App\Http\Controllers\UserController::class, 'index'])->name('clients.index');

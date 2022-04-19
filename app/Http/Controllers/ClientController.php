@@ -1,13 +1,19 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Client;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class ClientController extends Controller
 {
     public function index(){
-        return redirect('listClients');
+
+        $clients = Client::all();
+
+        return Inertia::render('listClients',
+        ['clients' => $clients]
+        );
     }
 
 }

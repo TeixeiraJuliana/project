@@ -1,26 +1,24 @@
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue';
 
+
+
 </script>
 
 <template>
     <AppLayout title="Dashboard">
         <div class="container">
-            <div class="box">
-                <h1>Clientes</h1>
-                <div id="table-heading">
-                    <div>Nome</div>
-                    <div>E-mail</div>
-                    <div>Telefone</div>
-                    <div>CPF</div>
-                    <div>Ações</div>
-                </div>
-                <div  class="table-rows">
-                    <div  class="table-row" v-for="client in clients" :key="client.id">
-                        <div>{{ client.name_client }} </div>
-                        <div>{{ client.email}}</div>
-                        <div>{{ client.phone}}</div>
-                        <div>{{ client.cpf}}</div>
+        <div class="box">
+            <h1>Usuários</h1>
+            <div id="table-heading">
+                <div>Nome</div>
+                <div>E-mail</div>
+                <div>Ações</div>
+            </div>
+            <div  class="table-rows">
+                <div  class="table-row" v-for="user in users" :key="user.id">
+                    <div>{{user.name}}</div>
+                    <div>{{user.email}}</div>
                         <div class="act">
                             <div>
                                 <button class="btn"><a href=""><img src="" alt="">Open</a></button>
@@ -34,16 +32,17 @@ import AppLayout from '@/Layouts/AppLayout.vue';
                                 <button  class="btn" ><a href=""><img src="" alt="">Edit</a></button>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
     </AppLayout>
 </template>
 
 <script>
 export default {
-    props: ['clients'],
+    props: ['users'],
     components: {
         AppLayout,
     }
@@ -52,9 +51,16 @@ export default {
 </script>
 
 <style>
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    overflow: hidden;
+}
 .box{
-
     width: 100%;
     height: 100%;
 }
