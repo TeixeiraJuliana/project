@@ -7,6 +7,10 @@ npm i
 npm run dev
 
 # videos uteis 
+INERTIA 
+https://www.youtube.com/watch?v=Oim4NZECwTY&list=PLB5SYDBi8M3FBx5Ff-1fGug4iHMDiq5uo
+https://www.youtube.com/watch?v=hOF2NQkkyYk completo 
+https://www.youtube.com/watch?v=9nugQoIjTHk
 
 JETSTREAM 
 
@@ -80,9 +84,6 @@ DB_PASSWORD=123456
 # migrations 
 php artisan make:model Nome -mc
 php artisan make:migration add_user_id_to_posts_table
-
-
-
 
 # Banco de dados 
 
