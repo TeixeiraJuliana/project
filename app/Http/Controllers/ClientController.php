@@ -1,4 +1,3 @@
-
 <?php
 
 namespace App\Http\Controllers;
@@ -21,10 +20,8 @@ class ClientController extends Controller
     }
     public function edit(){
 
-
     }
     public function update(){
-
 
     }
 
