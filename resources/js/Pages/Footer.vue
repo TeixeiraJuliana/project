@@ -20,7 +20,7 @@ export default {
         width: 100vw;
         height: 260px;
         background: grey;
-        background: var(--forte);
+        background: var(--strong);
     }
 </style>>
 

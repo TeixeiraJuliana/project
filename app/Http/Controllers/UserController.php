@@ -13,9 +13,10 @@ class UserController extends Controller
 
         $users = User::all();
 
-        return Inertia::render('ListUser',
+        return Inertia::render('User/ListUser',
         ['users' => $users]
     );
 
     }
+    
 }

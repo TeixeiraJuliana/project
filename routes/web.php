@@ -40,21 +40,17 @@ Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
-])->get('/clients', function () {
-        return Inertia::render('listClients');
-})->name('clients.index');
-
-Route::get('/users', [App\Http\Controllers\UserController::class, 'index'])->name('users.index');
-
-Route::get('/clients', [App\Http\Controllers\ClientController::class, 'index'])->name('clients.index');
-
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified',
 ])->get('/abaut', function () {
         return Inertia::render('Abaut');
 })->name('Abaut');
 
 
+Route::get('/users', [App\Http\Controllers\UserController::class, 'index'])->name('users.index');
+
+Route::get('/clients', [App\Http\Controllers\ClientController::class, 'index'])->name('clients.index');
+Route::get('/client', [App\Http\Controllers\ClientController::class, 'create'])->name('client.create');
+
+Route::get('/pecas', [App\Http\Controllers\ClientController::class, 'index'])->name('pecas.index');
+
+Route::get('/ordem', [App\Http\Controllers\ClientController::class, 'index'])->name('ordem.index');
 

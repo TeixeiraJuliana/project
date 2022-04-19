@@ -1,9 +1,10 @@
+
 :root{
-    --forte: #2085d8;
-    --media: #20b7d8;
-    --clara: #20dad8;
-    --light: #b9efed;
-    --extra-light: #f8efed
+    --strong:#2085d8;
+    --medium:#20b7d8;
+    --light:#20dad8;
+    --extraLight:#b9efed;
+    --neutral:#f8efed;
 }
 
 *,

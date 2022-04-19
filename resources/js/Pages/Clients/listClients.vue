@@ -1,24 +1,29 @@
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue';
 
-
-
 </script>
 
 <template>
     <AppLayout title="Dashboard">
         <div class="container">
-        <div class="box">
-            <h1>Usuários</h1>
-            <div id="table-heading">
-                <div>Nome</div>
-                <div>E-mail</div>
-                <div>Ações</div>
-            </div>
-            <div  class="table-rows">
-                <div  class="table-row" v-for="user in users" :key="user.id">
-                    <div>{{user.name}}</div>
-                    <div>{{user.email}}</div>
+
+                <button class="butn">
+                     <a href="/client">Cadastrar Cliente</a>
+                </button>
+                <h1>Clientes</h1>
+                <div id="table-heading">
+                    <div>Nome</div>
+                    <div>E-mail</div>
+                    <div>Telefone</div>
+                    <div>CPF</div>
+                    <div>Ações</div>
+                </div>
+                <div  class="table-rows">
+                    <div  class="table-row" v-for="client in clients" :key="client.id">
+                        <div>{{ client.name_client }} </div>
+                        <div>{{ client.email}}</div>
+                        <div>{{ client.phone}}</div>
+                        <div>{{ client.cpf}}</div>
                         <div class="act">
                             <div>
                                 <button class="btn"><a href="">Open</a></button>
@@ -32,17 +37,16 @@ import AppLayout from '@/Layouts/AppLayout.vue';
                                 <button  class="btn" ><a href="">Edit</a></button>
                             </div>
                         </div>
+                    </div>
                 </div>
-            </div>
+       
         </div>
-    </div>
-
     </AppLayout>
 </template>
 
 <script>
 export default {
-    props: ['users'],
+    props: ['clients'],
     components: {
         AppLayout,
     }
@@ -51,18 +55,15 @@ export default {
 </script>
 
 <style>
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-body{
-    overflow: hidden;
+.butn{
+    width: 180px;
+    height: 60px;
+    background: var(--strong);
+    border-radius: 5px;
+    color: var(--extraLight);
 }
 .box{
     width: 100%;
-
 }
 .table-rows{
     max-height: 550px;
@@ -93,7 +94,6 @@ body{
     flex-direction: column;
     text-align: center;
     padding: 20px 50px;
-
 }
 .box h1{
     text-align: center;
@@ -170,7 +170,6 @@ h1{
 @media only screen and (max-width: 750px) {
   .box{
       width: 100%;
-      height: 100vh;
       padding: 0;
       margin: 0;
       justify-content: center;
@@ -187,7 +186,7 @@ h1{
   .table-row{
     display: flex;
     width: 100%;
-    min-width: 372px;
+    min-width: 330px;
     height: 100%;
     min-height: 400px;
     flex-direction: column;

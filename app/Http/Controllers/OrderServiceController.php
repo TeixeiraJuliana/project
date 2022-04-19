@@ -1,22 +1,19 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Client;
-use Illuminate\Http\Request;
-use Inertia\Inertia;
 
-class ClientController extends Controller
+use Illuminate\Http\Request;
+
+class OrderServiceController extends Controller
 {
+
     public function index(){
 
-        $clients = Client::all();
 
-        return Inertia::render('Clients/listClients',
-        ['clients' => $clients]
-        );
     }
     public function create(){
-        return Inertia::render('Form');
+
+
     }
     public function edit(){
 
@@ -31,6 +28,4 @@ class ClientController extends Controller
 
 
     }
-
-
 }
