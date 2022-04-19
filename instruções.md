@@ -17,22 +17,16 @@ https://www.youtube.com/watch?v=9nugQoIjTHk
 JETSTREAM 
 
 https://jetstream.laravel.com/2.x/installation.html
-
 compartilhar classe com todas as viewa
-
 https://www.youtube.com/watch?v=PnDiUAix27I
 
-quntidade de acessos aos posts
-Batist
-https://www.youtube.com/watch?v=qH7rsZBENJo&list=PLnDvRpP8BnewYKI1n2chQrrR4EYiJKbUG
+Quntidade de acessos aos posts
+https://www.youtube.com/watch?v=qH7rsZBENJo&list=PLnDvRpP8BnewYKI1n2chQrrR4EYiJKbUG Batist
 
 coments 
 https://www.youtube.com/watch?v=V66VbP4p0Wc&list=PLVSNL1PHDWvSOFpHtRi1-oZjBll69lehn&index=4
-
 https://pt.stackoverflow.com/questions/136163/deploy-de-projeto-laravel-pelo-git
-
 https://www.youtube.com/watch?v=gFAB9GKtxEs
-
 https://www.google.com/search?q=ux+login&tbm=isch&ved=2ahUKEwjbqdLS-Y73AhUyL7kGHee5AjIQ2-cCegQIABAA&oq=ux+login&gs_lcp=CgNpbWcQAzIFCAAQgAQyBAgAEB4yBAgAEB4yBAgAEB4yBAgAEB4yBggAEAUQHjIGCAAQBRAeMgYIABAFEB4yBggAEAUQHjIGCAAQCBAeOgcIIxDvAxAnOgQIABBDOgsIABCABBCxAxCDAToICAAQgAQQsQM6BwgAELEDEENQyQlY7xtgxx5oAHAAeACAAewBiAHHCpIBBTAuOC4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=jKlVYtszst7k5Q_n84qQAw&bih=752&biw=1432#imgrc=ABY2udvR-pYW6M
 
 helpers 
@@ -40,6 +34,7 @@ https://www.youtube.com/watch?v=5KfpuDNTlaA
 ondas com translate 
 
 sistema financeiro
+https://www.youtube.com/watch?v=2BdAIrbWSH4&list=PL7_3IDIE2Fy7RLs5He867a4J2IOcnrCeI - ordem de serviço 
 https://www.youtube.com/watch?v=WCYKKBtxfrc&list=PLw6ZnC_OJcva1PZgT_cdURU2pX0Eh6_nt&index=48
 
 curso grande 
@@ -47,11 +42,8 @@ https://www.youtube.com/watch?v=efM4oGnIM4w&list=PLxNM4ef1BpxhBRa1TlRrS1TZ0bUo-1
 
 interessante
 https://www.youtube.com/watch?v=6-QeM4THJ0c
-
 https://www.youtube.com/watch?v=uJu2QcK8Nmk&list=PLVSNL1PHDWvS1e1aeoJV7VvaDZ9m67YPU&index=28
-
 https://www.youtube.com/watch?v=62w9n83YvOc
-
 https://www.youtube.com/watch?v=_yzDcSCECUk&list=PL0_f8nzxZ-FksYjJ8Oj4WwD13OVE2tNiH&index=2
 
 # deploy laravel 

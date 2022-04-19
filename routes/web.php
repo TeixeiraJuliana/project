@@ -43,6 +43,13 @@ Route::middleware([
         return Inertia::render('listClients');
 })->name('clients.index');
 
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->get('/abaut', function () {
+        return Inertia::render('Abaut');
+})->name('Abaut');
 
 
 

@@ -7,7 +7,7 @@ import AppLayout from '@/Layouts/AppLayout.vue';
     <AppLayout title="Dashboard">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Clientes
+                Abaut
             </h2>
         </template>
     </AppLayout>
@@ -26,4 +26,3 @@ export default {
 <style>
 
 </style>
-

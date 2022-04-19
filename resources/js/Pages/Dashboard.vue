@@ -17,7 +17,7 @@ import Navbar from '../Pages/Navbar.vue'
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                     <router-view>
-                        
+
                     </router-view>
                 </div>
             </div>
