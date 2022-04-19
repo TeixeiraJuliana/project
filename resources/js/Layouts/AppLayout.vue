@@ -8,6 +8,7 @@ import JetDropdown from '@/Jetstream/Dropdown.vue';
 import JetDropdownLink from '@/Jetstream/DropdownLink.vue';
 import JetNavLink from '@/Jetstream/NavLink.vue';
 import JetResponsiveNavLink from '@/Jetstream/ResponsiveNavLink.vue';
+import Footer from '../Pages/Footer.vue'
 
 defineProps({
     title: String,
@@ -52,12 +53,6 @@ const logout = () => {
                                 <JetNavLink :href="route('dashboard')" :active="route().current('dashboard')">
                                     Dashboard
                                 </JetNavLink>
-                                <JetNavLink :href="route('clients.index')" :active="route().current('clients')">
-                                    Clientes
-                                </JetNavLink>
-                                <JetNavLink :href="route('users.index')" :active="route().current('users')">
-                                    Usuários
-                                </JetNavLink>
                             </div>
                         </div>
 
@@ -81,7 +76,6 @@ const logout = () => {
                                             </button>
                                         </span>
                                     </template>
-
                                     <template #content>
                                         <div class="w-60">
                                             <!-- Team Management -->
@@ -309,15 +303,119 @@ const logout = () => {
 
             <!-- Page Content -->
             <main>
-                <slot />
+                <div class="navbar">
+                <div class="side">
+                    <input type="checkbox" id="chec">
+                    <label  for="chec">
+                    <h1>Menu</h1>
+                    </label>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <JetNavLink :href="route('users.index')" :active="route().current('users')">
+                                    Usuários
+                                </JetNavLink>
+                            </li>
+                            <li>
+                                <JetNavLink :href="route('clients.index')" :active="route().current('clients')">
+                                    Clientes
+                                 </JetNavLink>
+                            </li>
+                            <li><a href="">Peças</a></li>
+                            <li><a href="">contato</a></li>
+                            <li><a href="">sobre</a></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="content">
+                    <slot/>
+                </div>
+                <Footer/>
             </main>
         </div>
     </div>
 </template>
 <style>
+    .content{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        min-height: 500px;
+    }
+    .side h1{
+
+    }
     main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+        background: 	#F0FFFF;
+        margin: 0;
+    }
+    #chec{
+        background: transparent;
+        border: 1px solid transparent;
+        outline: none;
+    }
+    .menu ul li a{
+         flex-direction: column;
+         display: flex;
+         justify-content: center;
+         align-items: flex-end;
+         padding: 30px;
+    }
+    .menu a{
+        text-decoration: none; /*tira o _ que é padrão*/
+        text-transform: uppercase;
+        font-family:  'Montserrat', sans-serif;
+        display: block;
+        padding: 20px 5px;
+        font-weight: 600;
+        color: white;
+        padding-left: 40px;
+    }
+    .menu{
+        background-color: rgba(16,16,16,.5);
+        list-style: none; /*remove a bolinha padrão de list*/
+        top: 70px;
+        position: absolute; /*para que top funcione*/
+        width: 100%;
+        padding-inline-start: 0;
+    }
+    img{
+        width: 10%;
+        height: 10%;
+        }
+    .side input[type='checkbox']{
+        display: none;
+    }
+    .menu{
+        width: 370px;
+        height: 100%;
+        /*position: relative; como ul tem position absolute considerará este o pai, pois é o unico com este atributo*/
+        position: absolute;
+        left: -370px;
+        transition: all .5s;
+        overflow: hidden;
+    }
+    .menu ul li a:hover{
+        width: 370px;
+        background-color: rgb(176,224,230);
+        color: black;
+        padding: auto;
+    }
+    .side label{
+        padding: 15px;
+        position: absolute;
+        z-index: 1; /*traz um elemento para frente*/
+    }
+    .side input:checked ~ .menu {
+        transform: translatex(350px);
+    }
+    @media only screen and (max-width: 750px) {
+         .menu ul li a{
+             align-items: center;
+         }
+
+    }
+
 </style>

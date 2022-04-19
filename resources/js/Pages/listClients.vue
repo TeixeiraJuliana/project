@@ -23,15 +23,15 @@ import AppLayout from '@/Layouts/AppLayout.vue';
                         <div>{{ client.cpf}}</div>
                         <div class="act">
                             <div>
-                                <button class="btn"><a href=""><img src="" alt="">Open</a></button>
+                                <button class="btn"><a href="">Open</a></button>
                             </div>
                             <div>
                                 <form action="" method="">
-                                    <button  class="btn" type="submit"><img src="" alt="">Delete</button>
+                                    <button  class="btn" type="submit">Delete</button>
                                 </form>
                             </div>
                             <div>
-                                <button  class="btn" ><a href=""><img src="" alt="">Edit</a></button>
+                                <button  class="btn" ><a href="">Edit</a></button>
                             </div>
                         </div>
                     </div>
@@ -54,9 +54,7 @@ export default {
 <style>
 
 .box{
-
     width: 100%;
-    height: 100%;
 }
 .table-rows{
     max-height: 550px;
@@ -164,7 +162,6 @@ h1{
 @media only screen and (max-width: 750px) {
   .box{
       width: 100%;
-      height: 100vh;
       padding: 0;
       margin: 0;
       justify-content: center;
@@ -181,7 +178,7 @@ h1{
   .table-row{
     display: flex;
     width: 100%;
-    min-width: 372px;
+    min-width: 330px;
     height: 100%;
     min-height: 400px;
     flex-direction: column;

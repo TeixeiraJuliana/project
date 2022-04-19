@@ -21,15 +21,15 @@ import AppLayout from '@/Layouts/AppLayout.vue';
                     <div>{{user.email}}</div>
                         <div class="act">
                             <div>
-                                <button class="btn"><a href=""><img src="" alt="">Open</a></button>
+                                <button class="btn"><a href="">Open</a></button>
                             </div>
                             <div>
                                 <form action="" method="">
-                                    <button  class="btn" type="submit"><img src="" alt="">Delete</button>
+                                    <button  class="btn" type="submit">Delete</button>
                                 </form>
                             </div>
                             <div>
-                                <button  class="btn" ><a href=""><img src="" alt="">Edit</a></button>
+                                <button  class="btn" ><a href="">Edit</a></button>
                             </div>
                         </div>
                 </div>
@@ -62,7 +62,7 @@ body{
 }
 .box{
     width: 100%;
-    height: 100%;
+
 }
 .table-rows{
     max-height: 550px;

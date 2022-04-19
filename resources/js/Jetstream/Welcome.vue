@@ -1,5 +1,5 @@
 <script setup>
-import Teste from '../Pages/Teste.vue';
+import Teste from '../Pages/Footer.vue';
 
 </script>
 
