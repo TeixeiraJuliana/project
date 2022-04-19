@@ -8,6 +8,8 @@ npm run dev
 
 # videos uteis 
 INERTIA 
+https://www.youtube.com/watch?v=wJN_7YJkzRw router view
+https://www.youtube.com/watch?v=JZDmBWRPWlw Single Page Apps
 https://www.youtube.com/watch?v=Oim4NZECwTY&list=PLB5SYDBi8M3FBx5Ff-1fGug4iHMDiq5uo
 https://www.youtube.com/watch?v=hOF2NQkkyYk completo 
 https://www.youtube.com/watch?v=9nugQoIjTHk
