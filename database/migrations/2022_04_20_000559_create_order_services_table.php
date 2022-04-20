@@ -14,7 +14,9 @@ return new class extends Migration
     public function up()
     {
         Schema::create('order_services', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id')->unsigned();
+            $table->date('end_date');
+            $table->string('status');
             $table->timestamps();
         });
     }
