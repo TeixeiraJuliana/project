@@ -29,14 +29,5 @@ export default {
 </script>
 
 <style>
-    .btn{
-        width: 160px;
-        height: 60px;
-        border: none;
-        color: #fff;
-        border-radius: 5px;
-    }
-    .btn-primary{
-        background: rgb(0, 162, 255);
-    }
+
 </style>

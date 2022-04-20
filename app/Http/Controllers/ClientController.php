@@ -18,6 +18,15 @@ class ClientController extends Controller
     public function create(){
         return Inertia::render('Client/FormClient');
     }
+    public function store(Request $request){
+        $client = new Client;
+        $client->name_client =  $request->name_client;
+        $client->email =  $request->email;
+        $client->phone =  $request->phone;
+        $client->cpf =  $request->cpf;
+        $client->save();
+        return back();
+    }
     public function edit(){
 
     }

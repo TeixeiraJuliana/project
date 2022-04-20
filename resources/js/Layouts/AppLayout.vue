@@ -338,6 +338,16 @@ const logout = () => {
         background: rgb(236, 235, 235);
         margin: 50px;
     }
+    .btn{
+        width: 160px;
+        height: 60px;
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+    }
+    .btn-primary{
+        background: rgb(0, 162, 255);
+    }
       @media only screen and (max-width: 730px) {
         .container{
             margin: 0;
