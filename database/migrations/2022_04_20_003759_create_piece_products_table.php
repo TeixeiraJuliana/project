@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('type_piece');
             $table->string('details');
             $table->string('difficulty');
-            $table->bigInteger('size');
-            $table->bigInteger('square_meters');
+            $table->string('size');
+            $table->bigInteger('square_meters')->NULL;
             $table->timestamps();
         });
     }
