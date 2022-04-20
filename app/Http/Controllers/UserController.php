@@ -1,10 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Client;
+use Inertia\Inertia;
 use Illuminate\Http\Request;
 
-class User extends Controller
+class UserController extends Controller
 {
 
     public function index(){
