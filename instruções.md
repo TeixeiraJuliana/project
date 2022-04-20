@@ -7,6 +7,15 @@ npm i
 npm run dev
 
 # videos uteis 
+SOLID LARAVEL 
+https://www.youtube.com/watch?v=ZUMQEkoF1_c
+https://www.youtube.com/watch?v=Y3WrimnqtDM&list=PLfhCdkDmgh2gKfqs6iWS9iNV_eP8O9FBU
+
+TESTES 
+
+https://www.youtube.com/watch?v=f3tD-K796xo
+
+
 INERTIA 
 https://www.youtube.com/watch?v=wJN_7YJkzRw router view
 https://www.youtube.com/watch?v=JZDmBWRPWlw Single Page Apps
@@ -106,3 +115,12 @@ RESOLVE:
 npm update vue-loader
 
 https://stackoverflow.com/questions/63021856/cannot-find-module-webpack-lib-rules-basiceffectruleplugin
+
+
+$request->validate(
+    [
+        'name_client' =>$request->name_client,
+        'email' =>$request->email,
+        'phone' =>$request->phone,
+        'cpf' =>$request->cpf,
+    ]);

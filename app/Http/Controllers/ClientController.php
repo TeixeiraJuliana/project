@@ -19,13 +19,13 @@ class ClientController extends Controller
         return Inertia::render('Client/FormClient');
     }
     public function store(Request $request){
-        $client = new Client;
-        $client->name_client =  $request->name_client;
-        $client->email =  $request->email;
-        $client->phone =  $request->phone;
-        $client->cpf =  $request->cpf;
-        $client->save();
-        return back();
+            Client::create([
+                'name_client' =>$request->name_client,
+                'email' =>  $request->email,
+                'phone' => $request->phone,
+                'cpf' =>  $request->cpf
+            ]);
+            return redirect()->route('clients.index');
     }
     public function edit(){
 

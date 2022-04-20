@@ -43,8 +43,8 @@ Route::get('/users', [App\Http\Controllers\UserController::class, 'index'])->nam
 
 
 Route::get('/clients', [App\Http\Controllers\ClientController::class, 'index'])->name('clients.index');
-Route::get('/client', [App\Http\Controllers\ClientController::class, 'create'])->name('client.create');
-Route::get('client/store', [App\Http\Controllers\ClientController::class, 'store'])->name('client.store');
+Route::get('/client/create', [App\Http\Controllers\ClientController::class, 'create'])->name('client.create');
+Route::post('/client', [App\Http\Controllers\ClientController::class, 'store'])->name('client.store');
 
 Route::get('/pieces', [App\Http\Controllers\PieceProductController::class, 'index'])->name('pieces.index');
 

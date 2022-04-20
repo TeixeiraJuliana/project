@@ -13,7 +13,7 @@ import JetNavLink from '@/Jetstream/NavLink.vue';
         </template>
             <div>
                 <button type="button" class="btn btn-primary">
-                <JetNavLink :href="route('client.create')" :active="route().current('client')">
+                <JetNavLink :href="route('client.create')" :active="route().current('client/create')">
                     Cadastrar cliente
                 </JetNavLink>
                 </button>
