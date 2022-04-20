@@ -53,7 +53,16 @@ const logout = () => {
                                     Dashboard
                                 </JetNavLink>
                                 <JetNavLink :href="route('clients.index')" :active="route().current('clients')">
-                                    clients
+                                    Clientes
+                                </JetNavLink>
+                                <JetNavLink :href="route('pieces.index')" :active="route().current('pieces')">
+                                    Produtos
+                                </JetNavLink>
+                                <JetNavLink :href="route('order.index')" :active="route().current('order')">
+                                    Ordens de serviço
+                                </JetNavLink>
+                                <JetNavLink :href="route('service.index')" :active="route().current('service')">
+                                    Serviços
                                 </JetNavLink>
                             </div>
                         </div>
@@ -306,8 +315,32 @@ const logout = () => {
 
             <!-- Page Content -->
             <main>
-                <slot />
+                <div class="container">
+                    <slot />
+                </div>
             </main>
         </div>
     </div>
 </template>
+<style>
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        height: 100%;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(236, 235, 235);
+        margin: 50px;
+    }
+      @media only screen and (max-width: 730px) {
+        .container{
+            margin: 0;
+         }
+      }
+</style>

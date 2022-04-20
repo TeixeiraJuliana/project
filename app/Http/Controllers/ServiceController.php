@@ -1,35 +1,29 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Client;
+use App\Models\Service;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
-class ClientController extends Controller
+class ServiceController extends Controller
 {
     public function index(){
 
-        $clients = Client::all();
-
-        return Inertia::render('Client/ListClients',
-        ['clients' => $clients]
+        $service = Service::all();
+        return Inertia::render('Service/ListServices',
+        ['service' =>  $service]
         );
     }
     public function create(){
-        return Inertia::render('Client/FormClient');
+        return Inertia::render('Form');
     }
     public function edit(){
 
     }
     public function update(){
-
     }
 
     public function delete(){
 
-
     }
-
-
 }
-

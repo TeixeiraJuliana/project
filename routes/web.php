@@ -3,24 +3,16 @@
 <?php
 use Illuminate\Http\Controllers\Client;
 use Illuminate\Http\Controllers\User;
+use Illuminate\Http\Controllers\PieceProduct;
+use Illuminate\Http\Controllers\OrderService;
+use Illuminate\Http\Controllers\Service;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 Route::get('/', function () {
-    return Inertia::render('Home', [
+    return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
@@ -49,9 +41,14 @@ Route::middleware([
 
 Route::get('/users', [App\Http\Controllers\UserController::class, 'index'])->name('users.index');
 
+
 Route::get('/clients', [App\Http\Controllers\ClientController::class, 'index'])->name('clients.index');
 Route::get('/client', [App\Http\Controllers\ClientController::class, 'create'])->name('client.create');
 
-Route::get('/pecas', [App\Http\Controllers\ClientController::class, 'index'])->name('pecas.index');
 
-Route::get('/ordem', [App\Http\Controllers\ClientController::class, 'index'])->name('ordem.index');
+Route::get('/pieces', [App\Http\Controllers\PieceProductController::class, 'index'])->name('pieces.index');
+
+
+Route::get('/order', [App\Http\Controllers\OrderServiceController::class, 'index'])->name('order.index');
+
+Route::get('/service', [App\Http\Controllers\ServiceController::class, 'index'])->name('service.index');

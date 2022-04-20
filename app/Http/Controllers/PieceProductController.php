@@ -1,16 +1,16 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\PieceProduct;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class PieceProductController extends Controller
 {
     public function index(){
 
         $piece_product = PieceProduct::all();
-        
-        return Inertia::render('OrdemService/OrdemService',
+        return Inertia::render('Piece/ListPieces',
         ['piece_product' =>  $piece_product]
         );
     }

@@ -41,9 +41,11 @@ ondas com translate
 
 sistema financeiro
 https://www.youtube.com/watch?v=WCYKKBtxfrc&list=PLw6ZnC_OJcva1PZgT_cdURU2pX0Eh6_nt&index=48
+https://www.youtube.com/watch?v=2BdAIrbWSH4&list=PL7_3IDIE2Fy7RLs5He867a4J2IOcnrCeI
 
-curso grande 
-https://www.youtube.com/watch?v=efM4oGnIM4w&list=PLxNM4ef1BpxhBRa1TlRrS1TZ0bUo-1r_r
+varios sistemas 
+https://www.youtube.com/user/tutoriais01/playlists
+
 
 interessante
 https://www.youtube.com/watch?v=6-QeM4THJ0c

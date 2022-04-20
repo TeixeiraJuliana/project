@@ -17,7 +17,9 @@ INSERT INTO clients (name_client, email, phone, cpf ) VALUES ('', '', '', '');
 
 # ordens de serviço 
 
-INSERT INTO order_services (end_date, status ) VALUES ('24/05/2022', 'urgente');
+INSERT INTO order_services (end_date, status ) VALUES ('20221010', 'urgente');
+
+INSERT INTO order_services (end_date, status ) VALUES ('20220524', 'padrão');
 
 INSERT INTO order_services (end_date, status ) VALUES ('', '');
 
@@ -26,3 +28,10 @@ INSERT INTO order_services (end_date, status ) VALUES ('', '');
 INSERT INTO piece_products (type_piece, details, difficulty, size, square_meters ) VALUES ('camisa', 'mancha', 'alta', 'G', '6');
 
 INSERT INTO piece_products (type_piece, details, difficulty, size, square_meters ) VALUES ('', '', '', '', '', '');
+
+# serviços
+
+INSERT INTO services (type_service, type_supplier) VALUES ('Passar', 'Interno');
+
+INSERT INTO services (type_service, type_supplier) VALUES ('', '');
+

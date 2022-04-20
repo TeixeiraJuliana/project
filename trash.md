@@ -1,3 +1,20 @@
+    public function index(){
+
+        $clients = Client::all();
+
+        dd($clients);
+
+        return Inertia::render('Clients/listClients'
+        );
+    }
+
+
+
+
+
+
+
+
 
                         <!-- Hamburger -->
                         <div class="-mr-2 flex items-center sm:hidden">

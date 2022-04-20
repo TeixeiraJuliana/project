@@ -1,16 +1,16 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\OrderService;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class OrderServiceController extends Controller
 {
     public function index(){
 
         $order_service = OrderService::all();
-
-        return Inertia::render('OrdemService/OrdemService',
+        return Inertia::render('OrdemService/ListOrdemService',
         ['order_service' =>  $order_service]
         );
     }
